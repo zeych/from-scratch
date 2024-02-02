@@ -23,7 +23,7 @@
 }
 
 @font-face {
-   font-family: Inter;
+   font-family: "Inter";
    src: url(interbold.tff) format(tff);
    src: url(interbold.woff) format(woff);
    src: url(interbold.woff2) format(woff2);

@@ -1,0 +1,76 @@
+body {
+   background-color: #1e1e1e;
+   font-family: "inter", sans-serif;
+   font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+   margin: 0;
+   padding: 0;
+}
+
+.content-section {
+   box-sizing: border-box;
+   width: 360px;
+   margin: auto;
+}
+
+.content-section_theme_dark {
+   background-color: #000000;
+   color: white;
+}
+.content-section_theme_bright {
+   background-color: #FEE42A;
+   color: white;
+}
+
+.header {
+   padding: 24px 20px;
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid blanchedalmond;
+}
+.header__logo-image{
+   width: 78px;
+   height: 16px;
+}
+.header__menu-list {
+   color: white;
+   list-style: none;
+   line-height: 19px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.header__menu-link {
+   color: white;
+}
+
+.header__menu-item_active {
+   text-decoration: none; 
+   color: white;
+}
+
+.cover {
+   border: 1px solid blanchedalmond;
+   height: 100px;
+}
+.intro {
+   border: 1px solid blanchedalmond;
+   height: 100px;
+}
+.reasons {
+   border: 1px solid blanchedalmond;
+   height: 100px;
+}
+
+.how-to {
+   border: 1px solid blanchedalmond;
+   height: 100px;
+}
+
+.footer {
+   border: 1px solid blanchedalmond;
+   height: 100px;
+}
