@@ -4,6 +4,7 @@
    src: url(ebgaramondmedium.woff) format(woff);
    src: url(ebgaramondmedium.woff2) format(woff2);
    font-weight: 500;
+   font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,8 @@
    src: url(ebgaramondregular.woff) format(woff);
    src: url(ebgaramondregular.woff2) format(woff2);
    font-weight: 400;
+   font-display: swap;
+
 }
 
 @font-face {
@@ -20,6 +23,8 @@
    src: url(interregular.woff) format(woff);
    src: url(interregular.woff2) format(woff2);
    font-weight: 400;
+   font-display: swap;
+
 }
 
 @font-face {
@@ -28,4 +33,6 @@
    src: url(interbold.woff) format(woff);
    src: url(interbold.woff2) format(woff2);
    font-weight: 700;
+   font-display: swap;
+
 }

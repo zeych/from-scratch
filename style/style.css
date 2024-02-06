@@ -1,43 +1,48 @@
 body {
+   margin: 0;
    background-color: #1e1e1e;
-   font-family: "inter", sans-serif;
+   font-family: Inter, sans-serif;
    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
-   margin: 0;
    padding: 0;
+   margin: 0;
 }
 
 .content-section {
+   margin: auto;
    box-sizing: border-box;
    width: 360px;
-   margin: auto;
+   /* min-height: 100px; */
 }
 
 .content-section_theme_dark {
-   background-color: #000000;
+   background-color: #131313;
    color: white;
 }
+
 .content-section_theme_bright {
    background-color: #FEE42A;
-   color: white;
-}
+   color: #131313;
+} 
 
 .header {
    padding: 24px 20px;
    display: flex;
    justify-content: space-between;
-   border: 1px solid blanchedalmond;
 }
-.header__logo-image{
+
+.header__logo {
    width: 78px;
-   height: 16px;
 }
+
+.header__logo-image {
+   width: 100%;
+}
+
 .header__menu-list {
-   color: white;
    list-style: none;
-   line-height: 19px;
    display: flex;
    flex-direction: column;
    gap: 12px;
@@ -45,32 +50,186 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 
 .header__menu-link {
    color: white;
+   line-height: 1.2;
+   font-size: 16px;
 }
 
 .header__menu-item_active {
-   text-decoration: none; 
-   color: white;
+   text-decoration: none;
 }
 
 .cover {
-   border: 1px solid blanchedalmond;
-   height: 100px;
+   background-image: url(../images/cover.svg);
+   background-repeat: no-repeat;
+   background-position: right center;
+   background-size: 95% auto;
+   padding: 7px 24px 32px 20px;
 }
+
+.cover__title {
+   font-family: "EB Garamond", serif;
+   font-weight: 400;
+   font-size: 72px;
+   line-height: 1;
+   width: 100%;
+   /* width: 340px; */
+}
+
+.accent-span {
+   display: block;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.text-right {
+   text-align: right;
+}
+
 .intro {
-   border: 1px solid blanchedalmond;
-   height: 100px;
+   padding: 0 20px 38px;
 }
+
+.intro__heading {
+   display: flex;
+   justify-content: space-between;
+   /* color: rgb(204, 204, 204); */
+   gap: 16px;
+   color: #CCCCCC;
+}
+
+.intro__title {
+   /* width: 203px; */
+   /* font-style: normal; */
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.2;
+}
+
+.intro__date {
+   white-space: nowrap;
+   line-height: 1.2;
+   font-size: 16px;
+}
+
+.intro__main-text {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   margin-top: 24px;
+   font-style: normal;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.2;
+}
+
+
 .reasons {
-   border: 1px solid blanchedalmond;
-   height: 100px;
+   padding: 40px 20px;
+}
+
+.content-section__subtitle {
+   padding-bottom: 32px;
+   line-height: 1.15;
+   font-family: "EB Garamond", serif;
+   font-weight: 500;
+   font-size: 28px;
+}
+
+.content-section__introduction {
+   margin-bottom: 32px;
+   font-size: 20px;
+   /* line-height: 1.35; */
+}
+
+.content-section__list {
+   padding-left: 16px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   font-size: 16px;
+   line-height: 1.35
+}
+
+.content-section__list-accent {
+   font-weight: 700;
 }
 
 .how-to {
-   border: 1px solid blanchedalmond;
+   padding: 40px 20px 20px;
+}
+
+.card {
+   border-radius: 20px;
+   padding: 20px 20px 20px;
+   margin-bottom: 32px;
+}
+
+.card__author {
+   width: 280px;
+}
+
+.card__content {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.card_theme_dark {
+   background-color: #343434;
+   color: #F5F5F5;
+}
+
+.card__author-photo {
+   width: 100px;
    height: 100px;
+   padding-bottom: 8px;
+   /* padding: 20px; */
+}
+
+.cards-list {
+   list-style: none;
+}
+
+.card__title {
+   font-family: "EB Garamond", serif;
+   font-weight: 500;
+   font-size: 21px;
+}
+
+.card__text {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   font-style: normal;
+   line-height: 21.6px;
+}
+
+.card_theme_bright {
+   color: #131313;
+   background-color: #FEE42A;
 }
 
 .footer {
-   border: 1px solid blanchedalmond;
-   height: 100px;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid #FEE42A;
+   align-items: center;
+
+}
+
+.footer__links a {
+   list-style: none;
+   color: white;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.footer__links {
+   list-style: none;
+   display: flex;
+   /* align-items: center; */
+   gap: 18px;
 }
